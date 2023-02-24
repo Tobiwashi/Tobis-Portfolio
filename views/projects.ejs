@@ -4,7 +4,26 @@
     <%- include('./partials/head.ejs')%>
     <title>Tobi's Portfolio</title>
 </head>
-<body class="bg-danger">
-<%- include('./partials/nav.ejs') %>   
+<body class="bg-success">
+<%- include('./partials/nav.ejs') %>
+<h1 class="my-5 text-center">Projects</h1>
+<div class='d-flex flex-row justify-content-center'>
+    <div class="card mx-auto" style="width: 30em; height: 30em;">
+        <img class='my-5 mx-auto' style="width: 27em; height: 12em;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Super_Smash_Bros_2018_logo.svg/2560px-Super_Smash_Bros_2018_logo.svg.png">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="card-title">Smashpedia</h5>
+          <p class="card-text">A Full CRUD MONGODB/Express app with a database of characters from the hit multiplayer game Super Smash Bros. Ultimate.</p>
+          <a href="https://smashbrosultimate.herokuapp.com/" class="btn btn-success">Check out full site</a>
+        </div>
+      </div>
+      <div class='mx-auto d-flex flex-row justify-content-center'>
+          <div class="card" style="width: 30em; height: 30em;">
+            <img class='mx-auto' style="width: 25em; height: 17em;"src="https://1000logos.net/wp-content/uploads/2017/04/NBA-Logo.png">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title">NBA-Informer</h5>
+                <p class="card-text">A Full CRUD MONGODB/Express app with a database with information and videos on all 30 NBA teams.</p>
+                <a href="https://nba-infromer.herokuapp.com/" class="btn btn-success">Check out full site</a>
+              </div>
+            </div>
 </body>
 </html>
