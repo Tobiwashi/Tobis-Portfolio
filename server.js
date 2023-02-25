@@ -4,15 +4,14 @@ const app = express()
 
 const PORT = process.env.PORT || '8080';
 
+const path = require('path');
 app.set('view engine', 'express');
-app.use(express.static(__dirname + '/public'))
-app.use(express.urlencoded({ extended: false }));
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({extended: true}));
 
+
 app.get('/', (req,res)=>{
-    res.render('home.ejs')
-})
-app.get('/about', (req,res)=>{
     res.render('about.ejs')
 })
 app.get('/contact', (req,res)=>{
